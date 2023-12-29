@@ -6,6 +6,7 @@ const skillsDetails = require('./SkillsDetails/skillsDetails.route');
 const educationDetails = require('./EducationDetails/educationDetails.router');
 const experianceDetails = require('./ExperianceDetails/experianceDetails.route');
 const projectDetails = require('./ProjectDetails/projectDetails.router');
+const getInTouch = require('./GetInTouch/getInTouch.route')
 require("dotenv").config()
 
 
@@ -22,7 +23,7 @@ app.use("/skills", skillsDetails)
 app.use("/education", educationDetails)
 app.use("/experiance", experianceDetails)
 app.use("/projects", projectDetails)
-
+app.use("/contact", getInTouch)
 app.get("/", (req,res) => {
     res.send({
         message: "API is working now"

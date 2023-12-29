@@ -34,7 +34,7 @@ async function memberDetails(req, res){
 async function getUserDetails(req, res){
     let responseData;
     try {
-        const UserDetails = await memberModel.findOne({_id : "658403a41f42c91227182271"});
+        const UserDetails = await memberModel.findOne({_id : "65841e50efa22b662ac436ab"});
         responseData = {
             meta: {
                 code: 200,

@@ -6,6 +6,8 @@ const memberSchema = new mongoose.Schema({
     email: { type: String },
     photo: { type: String},
     phoneNumber:{ type: String},
+    linkedinName:{ type: String},
+    githubName:{ type: String},
     is_admin: { type: Boolean },
     designations:{ type: [String]},
     aboutMe : { type: String},
