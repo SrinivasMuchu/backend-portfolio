@@ -3,6 +3,9 @@ const { contactFormModel } = require('../models/contactForm');
 
 
 const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+  port: 587,
+  secure: false,
     service: 'gmail',
     auth: {
         user: 'srinivasmuchu14@gmail.com',
