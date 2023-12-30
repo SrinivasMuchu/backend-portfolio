@@ -141,7 +141,7 @@ async function createGetInTouch(req, res) {
           const adminMailOptions = {
             from: 'srinivasmuchu14@gmail.com',
             to: 'srinivasmuchu14@gmail.com',
-            subject: `New Message Received You have received a new message from ${clientEmail}:\n\n${clientMessage}`,
+            subject: `New Message Received from ${clientEmail}`,
             html: `<html>
 
             <body>

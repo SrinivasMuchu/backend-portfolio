@@ -3,8 +3,8 @@ const { memberModel } = require('../models/user');
 async function memberDetails(req, res){
     let responseData;
     try {
-        const { photo, fullName, email, phoneNumber, designations, aboutMe, linkedin, github} = req.body;
-        const personDetails = await memberModel.create({photo, fullName, email, phoneNumber, designations, aboutMe, linkedin, github, is_admin: true});
+        const { photo, fullName, email, phoneNumber, designations, aboutMe, linkedin, github,githubName,linkedinName} = req.body;
+        const personDetails = await memberModel.create({photo, fullName, email, phoneNumber, designations, aboutMe, linkedin, github, is_admin: true,githubName,linkedinName});
         responseData = {
             meta: {
                 code: 200,

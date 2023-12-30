@@ -12,7 +12,8 @@ const memberSchema = new mongoose.Schema({
     designations:{ type: [String]},
     aboutMe : { type: String},
     linkedin: { type: String},
-    github: { type: String},
+    github: { type: String}, 
+    resume: { type: String},
 }, {
     timestamps: true,
 });
