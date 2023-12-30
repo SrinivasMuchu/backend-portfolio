@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
         user: 'srinivasmuchu14@gmail.com',
         pass: 'gxtfqumjokyqljwy',
     },
-    timeout: 100000
+    timeout: 100000,
 });
 
 async function createGetInTouch(req, res) {
